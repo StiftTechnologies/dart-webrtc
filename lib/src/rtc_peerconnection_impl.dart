@@ -314,7 +314,7 @@ class RTCPeerConnectionWeb extends RTCPeerConnection {
 
   @override
   Future<List<StatsReport>> getStats([MediaStreamTrack? track]) async {
-    var stats;
+    web.RTCStatsReport stats;
     if (track != null) {
       var jsTrack = (track as MediaStreamTrackWeb).jsTrack;
       stats = await _jsPc.getStats(jsTrack).toDart;
