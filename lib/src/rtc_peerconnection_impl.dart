@@ -335,7 +335,7 @@ class RTCPeerConnectionWeb extends RTCPeerConnection {
             value.getProperty<JSString>('type'.toJS).toDart,
             value.getProperty<JSNumber>('timestamp'.toJS).toDartDouble,
             stats));
-      }.jsify()
+      }.toJS
     ]);
     return report;
   }
