@@ -7,8 +7,11 @@ class MediaRecorder extends _interface.MediaRecorder {
   final _interface.MediaRecorder _delegate;
 
   @override
-  Future<void> start(String path,
-          {MediaStreamTrack? videoTrack, RecorderAudioChannel? audioChannel}) =>
+  Future<void> start(
+    String path, {
+    MediaStreamTrack? videoTrack,
+    RecorderAudioChannel? audioChannel,
+  }) =>
       _delegate.start(path, videoTrack: videoTrack, audioChannel: audioChannel);
 
   @override
