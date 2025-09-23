@@ -4,13 +4,12 @@ import 'dart:js_interop_unsafe';
 import 'dart:math';
 import 'dart:typed_data';
 
+// ignore: deprecated_member_use
 import 'package:js/js.dart';
 import 'package:web/web.dart' as web;
 import 'e2ee.keyhandler.dart';
 import 'e2ee.logger.dart';
 import 'e2ee.sfi_guard.dart';
-
-const IV_LENGTH = 12;
 
 const kNaluTypeMask = 0x1f;
 
